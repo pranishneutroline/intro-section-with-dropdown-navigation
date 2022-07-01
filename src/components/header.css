@@ -41,7 +41,7 @@
 }
 
 .hero-photo {
-    margin: 10px 30px;
+    margin: 0 6em 0 0;
     background-size: cover;
 }
 
@@ -50,6 +50,7 @@
     justify-content: space-between;
     gap: 20px;
     width: 80%;
+    margin-top: 8em;
 }
 
 @media only screen and (max-width: 800px) {
@@ -65,9 +66,8 @@
     }
 
     .hero-photo img {
-        width: 80%;
-        margin-top: 3em;
-        margin-bottom: 3em;
+        width: 100%;
+        background-image: stretch;
     }
 
     .hero-heading p {
@@ -76,5 +76,6 @@
 
     .hero-heading-brands {
         width: 100%;
+        margin: 0;
     }
 }

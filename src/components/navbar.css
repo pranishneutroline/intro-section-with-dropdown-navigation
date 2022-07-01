@@ -9,7 +9,6 @@ header {
 .topnav {
     display: flex;
     align-items: center;
-
 }
 
 .nav-toggle {
@@ -27,7 +26,7 @@ ul li {
 }
 
 a {
-    color: #333;
+    color: grey;
     text-decoration: none;
 }
 
@@ -67,15 +66,20 @@ header {
 }
 
 @media only screen and (max-width: 800px) {
+
     .navbar-container {
         /* max-width: 480px; */
         width: 100%;
         margin: auto;
+        flex-direction: column;
+    }
+
+    header {
+        align-items: flex-start;
     }
 
     .topnav {
         overflow: hidden;
-
     }
 
     ul a {
@@ -92,8 +96,32 @@ header {
 
     ul,
     .right {
-        display: none;
+        display: flex;
+        flex-direction: column;
+        height: -100vh;
+        width: 50vw;
+        position: absolute;
+        /* top: 50%; */
+        right: 0;
+        background-color: white;
+        margin-top: 50px;
     }
+
+    ul {
+        z-index: 100;
+    }
+
+    .btn-wrap a {
+        display: block;
+        margin-top: 30px;
+        /* z-index: 100 */
+    }
+
+
+    /* ul,
+    .right {
+        display: none;
+    } */
 
     .nav-toggle,
     .hamburger {
