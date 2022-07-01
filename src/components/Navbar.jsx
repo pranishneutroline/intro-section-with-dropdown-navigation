@@ -1,4 +1,5 @@
 import React from 'react'
+import "./navbar.css";
 
 function Navbar() {
   return (
@@ -25,28 +26,42 @@ function Navbar() {
 
     //   <hr />
     // </nav>
-    <>
-    <header>
-        <div className="logo">snap</div>
-        <button className="nav-toggle" arial-label="toggle navigation" onClick={()=>{
+    <>        <header className="navbar-container">
+      {/* <div className="topnav"> */}
+      <div className="nav">
+        <h1>
+          <a href="/#" className="logo-wrap">
+            snap</a>
+        </h1>
+        <button className="nav-toggle" arial-label="toggle navigation"  onClick={() => {
           
         }}>
           <span className="hamburger"></span>
         </button>
-        <nav className="nav">
-          <ul className="nav__list">
-            <div className="left">
-            <li className="nav__item"><a href="#" className="nav__link">Features</a></li>
-            <li className="nav__item"><a href="#" className="nav__link">Company</a></li>
-            <li className="nav__item"> <a href="#" className="nav__link">Career</a></li>
-            <li className="nav__item"><a href="#" className="nav__link"></a></li>
-            </div>
-            <div className="right">
-            <li className="nav__item"><a href="#" className="nav__link">Login</a></li>
-            <li className="nav__item"><a href="#" className="nav__link register">Register</a></li>
-            </div>
-          </ul>
-        </nav>
+        <ul>
+          <li>
+            <a href="/#">Features
+              <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg" className="dropdown-svg"><path stroke="#686868" stroke-width="1.5" fill="none" d="m1 1 4 4 4-4"  /></svg>
+            </a>
+          </li>
+          <li>
+            <a href="/#">Company
+              <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg" className="dropdown-svg"><path stroke="#686868" stroke-width="1.5" fill="none" d="m1 1 4 4 4-4"  /></svg>
+            </a>
+          </li>
+          <li>
+            <a href="/#">About</a>
+          </li>
+          <li>
+            <a href="/#">Career</a>
+          </li>
+        </ul>
+      </div>
+      <span className="btn-wrap right">
+        <a href="/#">Login</a>
+        <a href="/#" className="btn register">register</a>
+      </span>
+      {/* </div> */}
     </header>
     </>
   )

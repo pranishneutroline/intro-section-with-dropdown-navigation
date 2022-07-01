@@ -1,0 +1,80 @@
+.hero-heading {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    justify-content: center;
+    margin: 0 6em;
+}
+
+
+.hero-heading h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin: auto;
+}
+
+.hero-heading span {
+    display: block;
+}
+
+.hero-heading p {
+    width: 50%;
+}
+
+.learn-more {
+    width: 100px;
+    padding: 10px;
+    background: black;
+    color: white;
+    border-radius: 10px;
+}
+
+.learn-more:hover {
+    color: black;
+    background: white;
+    cursor: pointer;
+}
+
+.hero-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.hero-photo {
+    margin: 10px 30px;
+    background-size: cover;
+}
+
+.hero-heading-brands {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 80%;
+}
+
+@media only screen and (max-width: 800px) {
+
+    .hero-container {
+        display: flex;
+        flex-direction: column-reverse;
+        /* align-items: center; */
+    }
+
+    .hero-heading {
+        margin: 0;
+    }
+
+    .hero-photo img {
+        width: 80%;
+        margin-top: 3em;
+        margin-bottom: 3em;
+    }
+
+    .hero-heading p {
+        width: 100%;
+    }
+
+    .hero-heading-brands {
+        width: 100%;
+    }
+}

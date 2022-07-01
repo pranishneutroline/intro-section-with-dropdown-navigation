@@ -1,0 +1,152 @@
+.right a:hover {
+    color: black;
+}
+
+header {
+    background-color: white;
+}
+
+.topnav {
+    display: flex;
+    align-items: center;
+
+}
+
+.nav-toggle {
+    display: none;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    display: inline-block;
+    margin: 0 1.4rem;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+/* Generic Styles End */
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-wrap {
+    color: black;
+}
+
+.dropdown-svg {
+    margin-left: 10px;
+}
+
+.btn-wrap a {
+    margin: 0 1.4rem;
+}
+
+.right .register {
+    border: 1px solid grey;
+    padding: 9px;
+    border-radius: 10px;
+}
+
+.register:hover {
+    border: 1px solid black;
+    color: black;
+}
+
+@media only screen and (max-width: 800px) {
+    .navbar-container {
+        /* max-width: 480px; */
+        width: 100%;
+        margin: auto;
+    }
+
+    .topnav {
+        overflow: hidden;
+
+    }
+
+    ul a {
+        display: block;
+    }
+
+    .topnav a.icon {
+        background: black;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    ul,
+    .right {
+        display: none;
+    }
+
+    .nav-toggle,
+    .hamburger {
+        display: block;
+    }
+
+    .nav-toggle {
+        padding: .5em;
+        background: transparent;
+        border: 0;
+        cursor: pointer;
+        /* margin-left:auto; */
+        position: absolute;
+        right: 1em;
+        /* top: 1.5em; */
+        z-index: 1000
+    }
+
+    .hamburger {
+        background: url(../images/icon-menu.svg);
+        background-repeat: no-repeat;
+        display: block;
+        position: relative;
+    }
+
+    .hamburger,
+    .hamburger::before,
+    .hamburger::after {
+        width: 2em;
+        height: 3px;
+        background: black;
+        border-radius: 1em;
+    }
+
+    .hamburger::before,
+    .hamburger::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+    }
+
+    .hamburger::before {
+        top: 6px;
+    }
+
+    .hamburger::after {
+        bottom: 6px;
+    }
+
+    .nav__link {
+        font-size: 2rem;
+        color: inherit;
+    }
+
+}
